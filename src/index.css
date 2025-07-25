@@ -134,6 +134,24 @@ body::-webkit-scrollbar {
 }
 
     }
+    /* ✨ Soft, subtle glow effect */
+.glow-title {
+  text-shadow: 0 0 4px rgba(255, 150, 51, 0.4), 0 0 8px rgba(255, 85, 0, 0.3);
+}
+
+.glow-subtitle {
+  text-shadow: 0 0 3px rgba(255, 170, 85, 0.4), 0 0 6px rgba(255, 85, 0, 0.25);
+}
+
+.glow-button p {
+  text-shadow: 0 0 4px rgba(255, 153, 51, 0.3), 0 0 8px rgba(255, 85, 0, 0.25);
+  transition: text-shadow 0.4s ease-in-out;
+}
+
+.glow-button:hover p {
+  text-shadow: 0 0 8px rgba(255, 153, 51, 0.5), 0 0 12px rgba(255, 85, 0, 0.4);
+}
+
   }
 
   .message-content {
