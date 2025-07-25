@@ -1,12 +1,14 @@
+import NavBar from "./components/NavBar"
 
 function App() {
 
 
   return (
     <>
-<div className="bg-black text-white" >
-  hello
-</div>
+    <main>
+<NavBar/>
+    </main>
+
 
     </>
   )

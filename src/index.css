@@ -10,19 +10,22 @@
 }
 
 @theme {
-  --color-black: #222123;
-  --color-main-bg: #232224;
+  --color-black: #1c1b1e;               /* Deeper black for premium feel */
+  --color-main-bg: #1f1e21;             /* Slightly lighter for soft contrast */
   --color-white: #ffffff;
-  --color-dark-brown: #523122;
-  --color-mid-brown: #a26833;
-  --color-light-brown: #e3a458;
-  --color-red-brown: #7f3b2d;
-  --color-yellow-brown: #a26833;
-  --color-milk-yellow: #e3d3bc;
-  --color-red: #a02128;
-  --color-milk: #faeade;
+  
+  --color-dark-brown: #3d251c;          /* Rich espresso brown */
+  --color-mid-brown: #a45e30;           /* Warm caramel - perfect base */
+  --color-light-brown: #f6b768;         /* Honeyed highlight */
+  --color-red-brown: #88382e;           /* Spiced mahogany for accents */
+  --color-yellow-brown: #c98a41;        /* Butterscotch pop for hover/glow */
+  
+  --color-milk-yellow: #f5e2c8;         /* Creamy vanilla latte base */
+  --color-red: #b02d31;                 /* Punchy cherry red accent */
+  --color-milk: #fff4e9;                /* Ultra light background sections */
+
   --font-sans: "Antonio", sans-serif;
-  --font-paragraph: "ProximaNova, sans-serif";
+  --font-paragraph: "ProximaNova", sans-serif;
 }
 
 html,
@@ -30,18 +33,23 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #faeade;
-  color: #523122;
+
+  /* Updated background and text color */
+  background-color: #fff4e9; /* Soft milk-cream tone */
+  color: #3d251c;            /* Rich espresso-brown text */
+
   font-family: "Antonio", sans-serif;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE 10+ */
-}
 
+  /* Hide scrollbar */
+  scrollbar-width: none;         /* Firefox */
+  -ms-overflow-style: none;      /* IE 10+ */
+}
 body::-webkit-scrollbar {
   display: none; /* Chrome, Safari */
 }
+
 
 @layer utilities {
   .flex-center {
