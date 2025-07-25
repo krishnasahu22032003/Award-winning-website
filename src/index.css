@@ -77,29 +77,62 @@ body::-webkit-scrollbar {
     .hero-content {
       @apply relative z-10 w-full h-full flex flex-col 2xl:justify-center items-center translate-y-10 2xl:pt-0 md:pt-32 pt-24;
 
-      .hero-title {
-        @apply text-dark-brown 2xl:text-[8.5rem] md:text-[6.5rem] text-[3.3rem] font-bold uppercase leading-[9vw] tracking-[-.35vw] 2xl:mb-0 mb-5;
-      }
+.hero-title {
+  @apply text-center uppercase font-extrabold mb-6
+         text-[2.5rem] md:text-[4.2rem] xl:text-[5.5rem] 2xl:text-[6.5rem]
+         text-[#3e2710] leading-[1.1] tracking-[-0.02em];
+
+  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+  letter-spacing: -0.5px;
+}
+
 
       .hero-text-scroll {
         @apply rotate-[-3deg] mb-8 border-[.5vw] border-milk;
 
-        .hero-subtitle {
-          @apply bg-mid-brown;
-        }
+    .hero-subtitle {
+  @apply text-[#fff4e9] text-center uppercase font-extrabold tracking-widest text-xl 
+         px-6 py-3 rounded-xl shadow-xl border border-[#ffcc99] relative overflow-hidden;
+  background: linear-gradient(135deg, #3e1f1f 0%, #b35d2e 50%, #ffb775 100%);
+}
 
         h1 {
-          @apply uppercase 2xl:text-[8.5rem] md:text-[6.5rem] text-[3.3rem] font-bold text-[#fce1cd] leading-[9vw] tracking-[-.35vw] 2xl:px-[1.2vw] px-3 2xl:pb-[1vw] pb-5 2xl:py-0 py-3;
+          @apply uppercase 2xl:text-[7.5rem] md:text-[6.5rem] text-[3.3rem] font-bold text-[#fce1cd] leading-[9vw] tracking-[-.35vw] 2xl:px-[1.2vw] px-3 2xl:pb-[vw] pb-5 2xl:py-0 py-3;
         }
       }
 
-      h2 {
-        @apply font-paragraph text-dark-brown text-center md:max-w-lg max-w-sm px-5 md:text-lg leading-[115%] mt-3;
-      }
+  h2 {
+  @apply font-paragraph text-[#3a1c12] text-center md:max-w-2xl max-w-md px-6 md:text-xl text-base 
+         leading-snug mt-4 tracking-wide;
+}
 
-      .hero-button {
-        @apply md:mt-16 mt-10 text-dark-brown bg-light-brown uppercase font-bold text-lg rounded-full md:p-5 p-3 md:px-16 px-10;
-      }
+
+ .hero-button {
+  @apply relative md:mt-6 mt-10 uppercase font-bold text-lg rounded-full md:p-5 p-3 md:px-16 px-10
+         text-[#1f0d07] bg-gradient-to-br from-[#ffcc99] via-[#ff914d] to-[#ff5e3a] 
+         transition-all duration-300 ease-in-out overflow-hidden shadow-lg;
+
+  /* Optional: slightly larger on hover */
+  @apply hover:scale-105 hover:shadow-xl;
+}
+
+.hero-button::before {
+  content: "";
+  @apply absolute inset-0 rounded-full z-0;
+  background: radial-gradient(circle at center, rgba(255,255,255,0.25), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.hero-button:hover::before {
+  opacity: 1;
+}
+
+.hero-button p {
+  @apply relative z-10;
+  letter-spacing: 0.05em;
+}
+
     }
   }
 
@@ -276,6 +309,7 @@ body::-webkit-scrollbar {
     }
   }
 }
+
 
 .nutrition-section {
   background-color: #faeade00;
