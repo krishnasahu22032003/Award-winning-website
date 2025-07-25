@@ -79,8 +79,8 @@ body::-webkit-scrollbar {
 
 .hero-title {
   @apply text-center uppercase font-extrabold mb-6
-         text-[2.5rem] md:text-[4.2rem] xl:text-[5.5rem] 2xl:text-[6.5rem]
-         text-[#3e2710] leading-[1.1] tracking-[-0.02em];
+         text-[3.0rem] md:text-[4.2rem] xl:text-[5.5rem] 2xl:text-[6.5rem]
+         text-[#3e2710] leading-[1.1] tracking-[-0.09em];
 
   text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
   letter-spacing: -0.5px;
@@ -158,7 +158,7 @@ body::-webkit-scrollbar {
     @apply bg-[#7f3b2d] text-milk min-h-dvh overflow-hidden flex justify-center items-center relative z-20;
 
     .msg-wrapper {
-      @apply 2xl:text-[8.5rem] md:text-8xl text-5xl font-bold uppercase leading-[9vw] tracking-[-.35vw] flex flex-col justify-center items-center md:gap-24 gap-14;
+      @apply 2xl:text-[6.5rem] md:text-8xl text-5xl font-bold uppercase leading-[9vw] tracking-[-.35vw] flex flex-col justify-center items-center md:gap-24 gap-14;
 
       h1:first-of-type {
         @apply 2xl:max-w-4xl md:max-w-2xl max-w-xs text-center  text-[#faeade10];
