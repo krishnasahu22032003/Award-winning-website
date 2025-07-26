@@ -10,6 +10,7 @@ const MessageSection = () => {
   const containerRef = useRef();
 
   useGSAP(() => {
+    // Split text on mount
     const firstMsgSplit = new SplitText(".first-message", { type: "words" });
     const secMsgSplit = new SplitText(".second-message", { type: "words" });
     const paragraphSplit = new SplitText(".message-content p", {
@@ -20,7 +21,7 @@ const MessageSection = () => {
     // Animate first message
     gsap.fromTo(
       firstMsgSplit.words,
-      { color: null },
+      { color: "#a3735f" }, // initial muted
       {
         color: "#faeade",
         ease: "power2.out",
@@ -37,7 +38,7 @@ const MessageSection = () => {
     // Animate second message
     gsap.fromTo(
       secMsgSplit.words,
-      { color: null },
+      { color: "#a3735f" },
       {
         color: "#faeade",
         ease: "power2.out",
@@ -80,14 +81,22 @@ const MessageSection = () => {
     });
 
     ScrollTrigger.refresh();
+
+    return () => {
+      firstMsgSplit.revert();
+      secMsgSplit.revert();
+      paragraphSplit.revert();
+    };
   }, { scope: containerRef });
 
   return (
-    <section  className="message-content" ref={containerRef}>
-      <div  className="container  mx-auto flex-center py-28 relative">
+    <section className="message-content" ref={containerRef}>
+      <div className="container mx-auto flex-center py-28 relative">
         <div className="w-full h-full">
           <div className="msg-wrapper">
-            <h1 className="first-message">Stir up your fearless past and</h1>
+            <h1 className="first-message">
+              Shake loose the limits — awaken your raw, fearless drive
+            </h1>
 
             <div
               style={{
@@ -109,9 +118,7 @@ const MessageSection = () => {
           <div className="flex-center md:mt-20 mt-10">
             <div className="max-w-md px-10 flex-center overflow-visible">
               <p className="overflow-visible leading-relaxed text-center">
-                Rev up your rebel spirit and feed the adventure of life with
-                SPYLT, where you’re one chug away from epic nostalgia and
-                fearless fun.
+                Zestik isn’t just fuel — it’s a flavor-charged spark to your story. Sip into nostalgia, unleash your edge, and energize every move with a blast of bold protein power. One can. Endless attitude.
               </p>
             </div>
           </div>
