@@ -44,7 +44,7 @@ const FlavorTitle = () => {
   return (
     <div className="general-title col-center h-full 2xl:gap-32 xl:gap-24 gap-16">
       <div className="overflow-hidden 2xl:py-10 py-3 first-text-split">
-        <h1>We have 6</h1>
+        <h1> We brew 6</h1>
       </div>
 
       <div
@@ -53,13 +53,19 @@ const FlavorTitle = () => {
         }}
         className="flavor-text-scroll"
       >
-        <div className=" pb-5 2xl:pt-0 pt-3 2xl:px-5 px-3">
-          <h2 className="text-milk">freaking</h2>
+        <div className=" pb-5 2xl:pt-0 pt-3 2xl:px-5 px-3"
+         style={{
+    background: "linear-gradient(135deg, #d7a07f, #a65d43, #68403a)", // dreamy caramel → spice rust → deep cocoa
+    backgroundSize: "300% 300%",
+    animation: "zestikPulse 10s ease infinite",
+    borderRadius: "1.5rem",
+  }}>
+          <h2 className="text-milk">Zestified</h2>
         </div>
       </div>
 
       <div className="overflow-hidden 2xl:py-0 py-3 second-text-split">
-        <h1>delicious flavors</h1>
+        <h1>boldest blends</h1>
       </div>
     </div>
   );

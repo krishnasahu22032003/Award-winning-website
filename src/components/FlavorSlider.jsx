@@ -3,6 +3,10 @@ import { flavorlists } from "../constants";
 import gsap from "gsap";
 import { useRef } from "react";
 import { useMediaQuery } from "react-responsive";
+import ScrollTrigger from "gsap/ScrollTrigger";
+
+// Register ScrollTrigger plugin
+gsap.registerPlugin(ScrollTrigger);
 
 const FlavorSlider = () => {
   const sliderRef = useRef();
@@ -64,32 +68,19 @@ const FlavorSlider = () => {
   });
 
   return (
-    <div ref={sliderRef} className="slider-wrapper">
-      <div className="flavors">
+    <div ref={sliderRef} className="slider-wrapper flavor-section flex w-fit">
+      <div className="flavors flex">
         {flavorlists.map((flavor) => (
           <div
             key={flavor.name}
             className={`relative z-30 lg:w-[50vw] w-96 lg:h-[70vh] md:w-[90vw] md:h-[50vh] h-80 flex-none ${flavor.rotation}`}
           >
             <img
-              src={`/images/${flavor.color}-bg.svg`}
-              alt=""
+              src={`/images/${flavor.name}.png`}
+              alt={`${flavor.name} can`}
               className="absolute bottom-0"
             />
-
-            <img
-              src={`/images/${flavor.color}-drink.webp`}
-              alt=""
-              className="drinks"
-            />
-
-            <img
-              src={`/images/${flavor.color}-elements.webp`}
-              alt=""
-              className="elements"
-            />
-
-            <h1>{flavor.name}</h1>
+            <h1 className="text-white text-2xl mt-4">{flavor.name}</h1>
           </div>
         ))}
       </div>
