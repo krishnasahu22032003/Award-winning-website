@@ -3,6 +3,7 @@ import SmoothScroll from "./components/SmoothScroll"
 import FlavorSection from "./sections/FlavorSection"
 import HeroSection from "./sections/HeroSection"
 import MessageSection from "./sections/MessageSection"
+import NutritionSection from "./sections/NutritionSection"
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
 <HeroSection/>
 <MessageSection/>
 <FlavorSection/>
+<NutritionSection/>
 
      </div>
    </div>

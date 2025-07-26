@@ -68,7 +68,7 @@ const FlavorSlider = () => {
   });
 
   return (
-    <div ref={sliderRef} className="slider-wrapper  flavor-section flex w-fit">
+    <div ref={sliderRef} className="slider-wrapper   flavor-section flex w-fit">
       <div className="flavors flex">
         {flavorlists.map((flavor) => (
           <div
