@@ -1,5 +1,6 @@
 import NavBar from "./components/NavBar"
 import SmoothScroll from "./components/SmoothScroll"
+import BenefitSection from "./sections/BenefitSection"
 import FlavorSection from "./sections/FlavorSection"
 import HeroSection from "./sections/HeroSection"
 import MessageSection from "./sections/MessageSection"
@@ -20,6 +21,9 @@ function App() {
 <MessageSection/>
 <FlavorSection/>
 <NutritionSection/>
+<div>
+  <BenefitSection/>
+</div>
 
      </div>
    </div>

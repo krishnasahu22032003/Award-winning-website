@@ -273,23 +273,23 @@ background: linear-gradient(135deg, #b6957a, #8a5e42, #593724);
     @apply min-h-dvh bg-[#222123] overflow-hidden relative;
 
     p {
-      @apply text-milk font-paragraph text-center text-lg;
+      @apply text-milk font-paragraph text-center text-3xl;
     }
 
     .first-title {
-      @apply rotate-[3deg] relative z-10;
+      @apply rotate-[3deg] relative z-10 text-8xl;
     }
 
     .second-title {
-      @apply rotate-[-1deg] md:-translate-y-5;
+      @apply rotate-[-1deg] mt-5 md:-translate-y-5 text-9xl;
     }
 
     .third-title {
-      @apply rotate-[1deg] md:-translate-y-12 relative z-10;
+      @apply rotate-[1deg] mt-5 md:-translate-y-12 relative z-10 text-8xl;
     }
 
     .fourth-title {
-      @apply rotate-[-5deg] md:-translate-y-12;
+      @apply rotate-[-5deg] md:-translate-y-12 text-8xl ;
     }
 
     .vd-pin-section {
