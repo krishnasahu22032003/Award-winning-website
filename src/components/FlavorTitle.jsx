@@ -55,7 +55,7 @@ const FlavorTitle = () => {
       >
         <div className=" pb-5 2xl:pt-0 pt-3 2xl:px-5 px-3"
          style={{
-    background: "linear-gradient(135deg, #d7a07f, #a65d43, #68403a)", // dreamy caramel → spice rust → deep cocoa
+    background: "linear-gradient(135deg, #d7a07f, #a65d43, #68403a)", 
     backgroundSize: "300% 300%",
     animation: "zestikPulse 10s ease infinite",
     borderRadius: "1.5rem",
@@ -65,7 +65,7 @@ const FlavorTitle = () => {
       </div>
 
       <div className="overflow-hidden 2xl:py-0 py-3 second-text-split">
-        <h1>boldest blends</h1>
+        <h1 className="max-w-180">boldest blends</h1>
       </div>
     </div>
   );
