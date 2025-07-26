@@ -83,8 +83,8 @@ const MessageSection = () => {
   }, { scope: containerRef });
 
   return (
-    <section className="message-content" ref={containerRef}>
-      <div className="container mx-auto flex-center py-28 relative">
+    <section  className="message-content" ref={containerRef}>
+      <div  className="container  mx-auto flex-center py-28 relative">
         <div className="w-full h-full">
           <div className="msg-wrapper">
             <h1 className="first-message">Stir up your fearless past and</h1>

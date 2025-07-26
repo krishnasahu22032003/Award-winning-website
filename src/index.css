@@ -40,8 +40,9 @@ body {
 
   font-family: "Antonio", sans-serif;
   overflow-x: hidden;
-  scroll-behavior: smooth;
-
+  scroll-behavior: auto !important;
+overscroll-behavior: none;
+height: auto;
   /* Hide scrollbar */
   scrollbar-width: none;         /* Firefox */
   -ms-overflow-style: none;      /* IE 10+ */
