@@ -188,18 +188,24 @@ background: linear-gradient(135deg, #b6957a, #8a5e42, #593724);
   }
 
   .flavor-section {
-    @apply min-h-dvh bg-milk;
+    @apply min-h-dvh ;
+    background: radial-gradient(circle at 30% 30%, #fffaf6 0%, #f9eede 45%, #eed3b8 80%);
 
-    .flavor-text-scroll {
-      @apply rotate-[-3deg] md:translate-y-5 border-[.5vw] border-milk absolute z-10;
-    }
+.flavor-text-scroll {
+  @apply rotate-[-3deg] -translate-y-10 md:-translate-y-20 border-[.5vw]  absolute z-10;
+  border: 2px dashed rgba(255, 255, 255, 0.3);
+  border-radius: 1.5rem;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+}
+
 
     .first-text-split h1 {
-      @apply md:text-center text-dark-brown;
+      @apply md:text-center text-[#4e2f24];
     }
 
     .second-text-split h1 {
-      @apply md:text-center;
+      @apply md:text-center text-[#4e2f24];
     }
 
     .slider-wrapper {
