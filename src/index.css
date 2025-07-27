@@ -191,7 +191,7 @@ background: linear-gradient(135deg, #b6957a, #8a5e42, #593724);
     background: radial-gradient(circle at 30% 30%, #fffaf6 0%, #f9eede 45%, #eed3b8 80%);
 
 .flavor-text-scroll {
-  @apply rotate-[-3deg] -translate-y-10 md:-translate-y-20 border-[.5vw]  absolute z-10;
+  @apply rotate-[-3deg] -translate-y-15 md:-translate-y-20 border-[.5vw]  absolute z-10;
   border: 2px dashed rgba(255, 255, 255, 0.3);
   border-radius: 1.5rem;
   backdrop-filter: blur(4px);
@@ -200,7 +200,7 @@ background: linear-gradient(135deg, #b6957a, #8a5e42, #593724);
 
 
     .first-text-split h1 {
-      @apply md:text-center text-[#4e2f24];
+      @apply md:text-center  text-[#4e2f24];
     }
 
     .second-text-split h1 {

@@ -80,7 +80,7 @@ const FlavorSlider = () => {
   alt={`${flavor.name} can`}
   className="absolute rounded-4xl bottom-0 transition-all duration-500 ease-in-out shadow-[0_16px_60px_rgba(0,0,0,0.25)] hover:scale-105 hover:-translate-y-2 hover:shadow-[0_20px_80px_rgba(0,0,0,0.3)]"
 />
-  <h1 className="text-[#e4ddd7] text-6xl mt-2 tracking-normal font-semibold">
+  <h1 className="text-[#e4ddd7] text-4xl md:text-6xl mt-2 tracking-normal font-semibold">
   {flavor.name}
 </h1>
           </div>
