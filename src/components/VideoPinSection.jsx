@@ -36,7 +36,7 @@ const VideoPinSection = () => {
         }}
         className="size-full video-box"
       >
-        <video src="/videos/pin-video.mp4" playsInline muted loop autoPlay preload="auto" />
+        <video src="https://res.cloudinary.com/dq6gs5w21/video/upload/q_auto,w_auto/v1753638704/pin-video_xvq1u9.mp4" playsInline muted loop autoPlay preload="auto" />
 
         <div className="abs-center md:scale-100 scale-200">
           <img src="/images/circle-text.svg" alt="" className="spin-circle" />

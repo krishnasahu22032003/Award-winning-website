@@ -41,15 +41,13 @@
    ```bash
    git clone https://github.com/your-username/zestik.git
    cd zestik
-2.Install dependencies
+
+2.**Install dependencies**
 npm install
-3.Run the app
+3.**Run the app**
 npm run dev
 
-💡 Folder Structure
-bash
-Copy
-Edit
+💡 **Folder Structure**
 /src
  ┣ /components
  ┃ ┣ HeroSection.jsx
@@ -60,12 +58,12 @@ Edit
  ┣ /styles
  ┃ ┗ index.css
 
- 🤝 Contributing
+ 🤝 **Contributing**
 If you'd like to contribute or suggest enhancements, feel free to open an issue or submit a pull request. Contributions are highly welcome!
 
-📄 License
+📄 **License**
 This project is licensed under the MIT License.
-⭐️ Give it a Star!
+⭐️ **Give it a Star!**
 If you find this project helpful or inspiring, please give it a ⭐️ on GitHub! 
-Made by:krishna
-email:krishna.sahu.work@gmail.com
+**Made by:krishna**
+**email:krishna.sahu.work@gmail.com**

@@ -125,10 +125,11 @@ const HeroSection = () => {
           </>
         ) : (
           <video
-            src="/videos/hero-bg.mp4"
+            src="https://res.cloudinary.com/dq6gs5w21/video/upload/q_auto,w_auto/v1753638667/hero-bg_v8k8kq.mp4"
             autoPlay
             muted
             playsInline
+            preload="auto"
             className="absolute inset-0 w-full h-full object-cover"
           />
         )}
