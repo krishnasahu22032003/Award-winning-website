@@ -133,13 +133,14 @@ const HeroSection = () => {
           />
         )}
         <div className="hero-content opacity-0">
-          <div className="overflow-hidden">
+          <div className="overflow-hidden ">
             <h1
               ref={titleRef}
               className="hero-title glow-title"
               style={{ willChange: "transform" }}
             >
-              Crushing Smooth
+              
+             Crushing Smooth
             </h1>
           </div>
           <div

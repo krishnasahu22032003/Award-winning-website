@@ -80,11 +80,10 @@ body::-webkit-scrollbar {
 
 .hero-title {
   @apply text-center uppercase font-extrabold mb-6
-         text-[3.0rem] md:text-[4.2rem] xl:text-[5.5rem] 2xl:text-[6.5rem]
+         text-[4.0rem] md:text-[4.2rem] xl:text-[5.5rem] 2xl:text-[6.5rem]
          text-[#3e2710] leading-[1.1] tracking-[-0.09em];
-
-  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
-  letter-spacing: -0.5px;
+        text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+        letter-spacing: -0.5px;
 }
 
 
@@ -103,7 +102,7 @@ body::-webkit-scrollbar {
       }
 
   h2 {
-  @apply font-paragraph text-[#3a1c12] text-center md:max-w-2xl max-w-md px-6 md:text-xl text-base 
+  @apply font-paragraph text-[black] text-center md:max-w-2xl max-w-md px-6 md:text-xl text-base 
          leading-snug mt-4 tracking-wide;
 }
 
@@ -156,7 +155,7 @@ body::-webkit-scrollbar {
   }
 
   .message-content {
-    @apply text-milk min-h-dvh overflow-hidden flex justify-center items-center relative z-20;
+    @apply text-milk min-h-dvh overflow-hidden  flex justify-center items-center relative z-20;
 background: linear-gradient(135deg, #b6957a, #8a5e42, #593724);
 
     .msg-wrapper {
@@ -183,7 +182,7 @@ background: linear-gradient(135deg, #b6957a, #8a5e42, #593724);
     .msg-text-scroll {
         will-change: clip-path;
   transition: clip-path 0.4s ease-out;
-      @apply rotate-[3deg] 2xl:translate-y-20 -translate-y-5 absolute z-10 border-[.5vw] border-[#7f3b2d];
+      @apply rotate-[3deg] 2xl:translate-y-20  absolute z-10 border-[.5vw] border-[#7f3b2d];
     }
   }
 

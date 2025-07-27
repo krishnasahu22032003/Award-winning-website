@@ -105,12 +105,12 @@ const MessageSection = () => {
               }}
               className="msg-text-scroll"
             >
-              <div className="bg-light-brown md:pb-5 pb-3 px-5">
+              <div className="bg-light-brown md:pb-5 pb-3 px-5 md:block hidden">
                 <h2 className="text-red-brown">Fuel Up</h2>
               </div>
             </div>
 
-            <h1 className="second-message">
+            <h1 className="second-message ">
               your future with every gulp of Perfect Protein
             </h1>
           </div>
