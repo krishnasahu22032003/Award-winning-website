@@ -50,42 +50,40 @@ const BenefitSection = () => {
   Step into Zestik’s World: <br />
   More Than Just a Sip.
 </p>
-
           <div className="mt-20 col-center">
 <ClipPathTitle
   title={"Golden Roast Infusion"}
-  color={"#FDF6EC"}
+  color={"#E7D6C3"}
   bg={"linear-gradient(135deg, #5E3A2C, #D8A774)"}
   className={"first-title"}
   borderColor={"#2E1B12"}
 />
-
-      <ClipPathTitle
-  title={"Protein + Caffeine"}
-  color={"white"} // Rich dark cocoa text
-  bg={""} // Light latte gradient
+<ClipPathTitle
+  title={"Lunar Zest"}
+ color={"#E2D3C3"} 
+  bg={"linear-gradient(135deg, #2B1D1A, #5E4B44, #B9A58E)"} 
   className={"second-title"}
-  borderColor={"#7a4a32"} // Toasted almond border
+  borderColor={"#3E2C28"} 
+/>
+<ClipPathTitle
+  title={"Elemental Bloom"}
+  color={"#E3DDD5"} 
+  bg={"linear-gradient(135deg, #3A3D3B, #77807A, #D1D7D1)"} 
+  className={"third-title"}
+  borderColor={"#6A6E68"} 
+/>
+         <ClipPathTitle
+  title={"Velvet Pure"}
+  color={"#3B372F"} // Refined cocoa-stone – soft and grounded
+  bg={"linear-gradient(135deg, #FAF3E6, #F4D8AE, #EDD2B4)"} // Ivory → creamy gold → peach-blush
+  className={"fourth-title"}
+  borderColor={"#D6BA94"} // Smooth almond-gold border
 />
 
-            <ClipPathTitle
-              title={"Infinitely recyclable"}
-              color={"#faeade"}
-             bg={"linear-gradient(135deg, #7F3B2D, #C6975F)"}
-              className={"third-title"}
-              borderColor={"#222123"}
-            />
-            <ClipPathTitle
-              title={"Lactose free"}
-              color={"#2E2D2F"}
-              bg={"#FED775"}
-              className={"fourth-title"}
-              borderColor={"#222123"}
-            />
           </div>
 
           <div className="md:mt-0 mt-10">
-            <p>And much more ...</p>
+         <p>And that's just the beginning...</p>
           </div>
         </div>
       </div>
