@@ -9,9 +9,10 @@ const FlavorSection = () => {
         <div className="lg:w-[57%] flex-none h-80 lg:h-full md:mt-20 xl:mt-5">
           <FlavorTitle />
         </div>
-        <div className="h-full">
+        <div className="h-full ">
           <FlavorSlider />
         </div>
+        
       </div>
     </section>
   );

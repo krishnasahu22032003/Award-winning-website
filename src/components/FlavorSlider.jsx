@@ -3,10 +3,6 @@ import { flavorlists } from "../constants";
 import gsap from "gsap";
 import { useRef } from "react";
 import { useMediaQuery } from "react-responsive";
-import ScrollTrigger from "gsap/ScrollTrigger";
-
-// Register ScrollTrigger plugin
-gsap.registerPlugin(ScrollTrigger);
 
 const FlavorSlider = () => {
   const sliderRef = useRef();
@@ -68,19 +64,24 @@ const FlavorSlider = () => {
   });
 
   return (
-    <div ref={sliderRef} className="slider-wrapper   flavor-section flex w-fit">
-      <div className="flavors flex">
+    <div ref={sliderRef} className="slider-wrapper">
+      <div className="flavors">
         {flavorlists.map((flavor) => (
           <div
             key={flavor.name}
             className={`relative z-30 lg:w-[50vw] w-96 lg:h-[70vh] md:w-[90vw] md:h-[50vh] h-80 flex-none ${flavor.rotation}`}
           >
-       <img
+<img
   src={`/images/${flavor.name}.png`}
-  alt={`${flavor.name} can`}
-  className="absolute rounded-4xl bottom-0 transition-all duration-500 ease-in-out shadow-[0_16px_60px_rgba(0,0,0,0.25)] hover:scale-105 hover:-translate-y-2 hover:shadow-[0_20px_80px_rgba(0,0,0,0.3)]"
+  alt={flavor.name}
+  className="absolute bottom-0 left-1/2 -translate-x-1/2
+             object-contain rounded-3xl shadow-xl
+             hover:scale-105 transition-transform duration-500 ease-in-out"
 />
-  <h1 className="text-[#e4ddd7] text-4xl md:text-6xl mt-2 tracking-normal font-semibold">
+
+
+
+             <h1 className="text-[#e4ddd7] text-4xl md:text-6xl mt-2 tracking-normal font-semibold">
   {flavor.name}
 </h1>
           </div>
