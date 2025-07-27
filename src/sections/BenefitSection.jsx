@@ -53,18 +53,17 @@ const BenefitSection = () => {
 
           <div className="mt-20 col-center">
 <ClipPathTitle
-  title={"Flavor Reinvented"}
-  color={"#fef9f4"} // Smooth light cream for readability
-  bg={"linear-gradient(145deg, #7b4a36, #a46b48)"} // Subtle coffee caramel gradient
+  title={"Golden Roast Infusion"}
+  color={"#FDF6EC"}
+  bg={"linear-gradient(135deg, #5E3A2C, #D8A774)"}
   className={"first-title"}
-  borderColor={"#3c1f15"} // Deep roast brown for elegant framing
+  borderColor={"#2E1B12"}
 />
-
 
       <ClipPathTitle
   title={"Protein + Caffeine"}
-  color={"#3a1e17"} // Rich dark cocoa text
-  bg={"linear-gradient(135deg, #f3e2d2, #e4c2a8)"} // Light latte gradient
+  color={"white"} // Rich dark cocoa text
+  bg={""} // Light latte gradient
   className={"second-title"}
   borderColor={"#7a4a32"} // Toasted almond border
 />
@@ -72,7 +71,7 @@ const BenefitSection = () => {
             <ClipPathTitle
               title={"Infinitely recyclable"}
               color={"#faeade"}
-              bg={"#7F3B2D"}
+             bg={"linear-gradient(135deg, #7F3B2D, #C6975F)"}
               className={"third-title"}
               borderColor={"#222123"}
             />
