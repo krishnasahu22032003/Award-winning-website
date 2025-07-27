@@ -8,10 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const TestimonialSection = () => {
   useGSAP(() => {
-    gsap.set(".testimonials-section", {
-      marginTop: "-140vh",
-    });
-
+ 
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".testimonials-section",

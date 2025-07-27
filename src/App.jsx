@@ -23,10 +23,8 @@ function App() {
 <MessageSection/>
 <FlavorSection/>
 <NutritionSection/>
-<div>
-  <BenefitSection/>
-  <TestimonialSection/>
-</div>
+<BenefitSection/>
+ <TestimonialSection/>
 <FooterSection/>
      </div>
    </div>

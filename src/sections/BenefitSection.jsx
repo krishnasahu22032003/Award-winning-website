@@ -69,7 +69,7 @@ const BenefitSection = () => {
   title={"Elemental Bloom"}
   color={"#E3DDD5"} 
   bg={"linear-gradient(135deg, #3A3D3B, #77807A, #D1D7D1)"} 
-  className={"third-title"}
+  className={"third-title "}
   borderColor={"#6A6E68"} 
 />
          <ClipPathTitle
