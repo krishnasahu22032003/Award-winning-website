@@ -310,7 +310,8 @@ background: linear-gradient(135deg, #b6957a, #8a5e42, #593724);
   }
 
   .testimonials-section {
-    @apply bg-milk relative w-full h-[120dvh];
+@apply bg-gradient-to-br from-[#4B3D36] via-[#8C7261] to-[#D9BCA3] relative w-full h-[120dvh];
+
 
     .pin-box {
       @apply flex items-center justify-center w-full ps-52 absolute 2xl:bottom-32 bottom-[50vh];
@@ -321,7 +322,7 @@ background: linear-gradient(135deg, #b6957a, #8a5e42, #593724);
     }
 
     h1 {
-      @apply uppercase text-[20.5vw] leading-[105%] tracking-[-.4vw] ml-[2vw] font-bold;
+      @apply uppercase text-[15.5vw] leading-[105%] tracking-[-.4vw] ml-[2vw] font-bold;
     }
   }
 

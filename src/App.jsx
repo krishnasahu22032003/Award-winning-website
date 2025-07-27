@@ -5,6 +5,7 @@ import FlavorSection from "./sections/FlavorSection"
 import HeroSection from "./sections/HeroSection"
 import MessageSection from "./sections/MessageSection"
 import NutritionSection from "./sections/NutritionSection"
+import TestimonialSection from "./sections/TestimonialSection"
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
 <NutritionSection/>
 <div>
   <BenefitSection/>
+  <TestimonialSection/>
 </div>
 
      </div>
