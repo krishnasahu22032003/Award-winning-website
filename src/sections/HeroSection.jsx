@@ -108,7 +108,7 @@ const HeroSection = () => {
     });
   }, []);
   return (
-    <section  className="bg-main-bg">
+    <section id="home" className="bg-main-bg">
       <div id="video-frame" className="hero-container" ref={heroRef}>
         {isTablet ? (
           <>
