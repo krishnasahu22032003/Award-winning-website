@@ -78,7 +78,7 @@ const NutritionSection = () => {
         <div className="relative inline-block md:translate-y-20">
           <div className="general-title relative flex flex-col justify-center items-center gap-30">
             <div className="overflow-hidden place-self-start">
-              <h1 className="nutrition-title text-7xl">Sip. Glow. Go.</h1>
+              <h1 className="nutrition-title text-6xl">Sip. Glow. Go.</h1>
             </div>
             <div
               style={{
@@ -86,7 +86,7 @@ const NutritionSection = () => {
               }}
               className="nutrition-text-scroll place-self-start"
             >
-           <div className="bg-gradient-to-r from-[#f0dac3] via-[#eac4a4] to-[#d8a87d] text-6xl pb-5 md:pt-0 pt-3 md:px-5 px-3">
+           <div className="bg-gradient-to-r from-[#f0dac3] via-[#eac4a4] to-[#d8a87d] text-4xl md:text-6xl pb-5 md:pt-0 pt-3 md:px-5 px-3">
   <h2 className="text-[#3e2315]">  Pure Brilliance</h2>
 </div>
 
@@ -96,7 +96,7 @@ const NutritionSection = () => {
 
         <div className="flex md:justify-center items-center translate-y-5">
           <div className="md:max-w-xs max-w-md">
-       <p className="text-lg md:text-right text-balance font-paragraph">
+       <p className="text-lg hidden md:block md:text-right text-balance font-paragraph">
   A nourishing blend of essential vitamins, minerals, and protein — all in a smooth, lactose-free delight.
 </p>
           </div>

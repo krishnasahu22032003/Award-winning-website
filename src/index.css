@@ -245,7 +245,7 @@ background: linear-gradient(135deg, #b6957a, #8a5e42, #593724);
     }
 
     .nutrition-box {
-      @apply absolute md:bottom-16 bottom-5 w-full md:px-0 px-5;
+      @apply absolute flex justify-center items-center md:bottom-16 md:block hidden w-full md:px-0 px-5;
 
       .list-wrapper {
   @apply rounded-full border-[.5vw] mx-auto max-w-7xl md:py-8 py-5 md:px-0 px-5 flex justify-between items-center;
