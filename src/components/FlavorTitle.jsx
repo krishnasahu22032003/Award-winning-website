@@ -64,9 +64,13 @@ const FlavorTitle = () => {
         </div>
       </div>
 
-      <div className="overflow-hidden 2xl:py-0 py-3  second-text-split">
-        <h1 className="max-w-180">boldest blends</h1>
-      </div>
+ <div className="overflow-hidden 2xl:py-0 py-3 second-text-split">
+  <h1 className="text-center">
+    <span className="block md:inline mb-3">delicious</span>{" "}
+    <span className="block md:inline">flavors</span>
+  </h1>
+</div>
+
     </div>
   );
 };
